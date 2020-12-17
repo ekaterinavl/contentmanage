@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+{% block main_content %}
+
+{% if not Articles %}
+    <span class="message"> No items! </span>
+{% else %}
+{% for title, content in Articles.items() %}
+<article>
+    <h1 class="h1-article">{{title}}</h1>
+    <p class="article-content">
+        {{content}}
+    </p>
+</article>
+{% endfor %}
+{% endif %}
+{% endblock %}
+
+

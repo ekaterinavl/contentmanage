@@ -1,0 +1,125 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #ffa500;
+}
+
+.container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    webkit-justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+
+li {
+    display: inline-block;
+    float: right;
+    padding: 7px;
+    margin: 10px;
+    border: 3px solid #ffd994;
+    background-color: #ffd485;
+    transition: all .4s ease;
+}
+
+li:hover {
+      box-shadow: 3px 3px #000;
+}
+
+.logo {
+    width: 70px;
+    margin: 0;
+    padding: 10px;
+}
+
+.name {
+    color: #000;
+    font-size: 34px;
+    font-family: 'Bradley Hand', cursive;
+    font-weight: bold;
+    /*text-shadow: 1px 1px rgb(164, 220, 222);*/
+}
+
+.register {
+    color: #000;
+    font-size: 24px;
+    font-family: 'Bradley Hand', cursive;
+    font-weight: bold;
+}
+
+.SignIn {
+    color: #000;
+    font-size: 24px;
+    font-family: 'Bradley Hand', cursive ;
+    font-weight: bold;
+}
+
+.RegisterBlock {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    webkit-justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#footer {
+    width: inherit;
+    background-color: rgb(157, 97, 7);
+    margin: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'Bradley Hand', cursive ;
+    font-weight: bold;
+}
+
+.message {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'Bradley Hand', cursive;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(222, 216, 164);
+}
+#main_content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(246, 235, 169, .9);
+}
+
+.articles {
+    margin: 0;
+}
+
+article {
+    display: inline-block;
+    float: right;
+    padding: 3px;
+    margin: 10px;
+    border: 3px solid #fff;
+    font-size: 18px;
+    font-family: 'Bradley Hand', cursive;
+    box-shadow: 3px 3px rgb(222, 216, 164);
+}
+
+.h1-article {
+    text-shadow: 2px 2px rgb(222, 216, 164);
+}
