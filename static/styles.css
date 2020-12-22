@@ -2,12 +2,6 @@ body {
     width: 100%;
     margin: 0;
 }
-.all{
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    margin: 0;
-}
 
 a {
     text-decoration: none;
@@ -85,6 +79,10 @@ li:hover {
 
 .Register-Block {
     display: flex;
+}
+
+ul{
+    margin: 0;
 }
 
 #footer {
