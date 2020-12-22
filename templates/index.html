@@ -1,8 +1,9 @@
 {% extends "base.html" %}
-{% block page_content %}   
-    <header>{% block header %}
-        {% include "header.html" %}
-    {% endblock %}
+{% block page_content %}
+    <div class="all">
+        <header>{% block header %}
+            {% include "header.html" %}
+        {% endblock %}
     </header>
     
         
@@ -18,4 +19,5 @@
     {% include "footer.html" %}
     {% endblock %}
     </footer>
+    </div>
 {% endblock %}

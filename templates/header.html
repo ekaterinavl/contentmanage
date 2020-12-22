@@ -1,8 +1,12 @@
 <div class="container">
-    <a href=""><img src="static/AnyConv.com__cat_bat.svg" class="logo"></a>
-    <a href=""><span class="name">BatCat</span></a>
+    <a href="{{ url_for('index') }}"><img src="static/logo.svg" class="logo"></a>
+    <a href="/index"><span class="name">The BatCat's website</span></a>
     <ul class="RegisterBlock">
-        <a href=""><li class="register">Register</li></a>
-        <a href=""><li class="SignIn">Sign in</li></a>
+        <a href="/register"><li class="register">Sign Up</li></a>
+        {% if current_user.is_anonymous %}
+        <a href="{{ url_for('login') }}"><li class="SignIn">Log in</li></a>
+        {% else %}
+        <a href="{{ url_for('logout') }}"><li class="LogOut">Log Out</li></a>
+        {% endif %}
     </ul>
 </div>
